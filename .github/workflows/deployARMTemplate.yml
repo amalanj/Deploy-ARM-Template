@@ -3,9 +3,9 @@ name: Deploy ARM Template
 on:
   push:
     branches:
-      - master
+      - main
 env:
-  AZURE_SUBSCRIPTION_ID: << Subscription Id >>   # set this to your Azure Subscription Id
+  AZURE_SUBSCRIPTION_ID: 9bda846e-8242-418b-8d05-2e5cae23f8d0   # set this to your Azure Subscription Id
   AZURE_RESOURCE_GROUP: GitHubActionExercise-rg   # set this to your target resource group
 
 jobs:
@@ -26,4 +26,4 @@ jobs:
           scope: resourcegroup
           subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-          template: ./path-to/azuredeploy.json
+          template: ./azuredeploy.json
