@@ -4,7 +4,7 @@
     "parameters": {
         "VnetName": {
             "type": "string",
-            "defaultValue": "VNet-001",
+            "defaultValue": "VNet-002",
             "metadata": {
                 "description": "Virtual Network Name Using Github action"
             }
